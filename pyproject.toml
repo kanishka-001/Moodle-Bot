@@ -8,7 +8,17 @@ authors = [
 ]
 requires-python = ">=3.11"
 dependencies = [
+    "authlib>=1.7.2",
+    "jsonpatch>=1.33",
+    "neonize>=0.4.3.post0",
+    "openai>=2.53.0",
+    "peewee>=4.3.0",
+    "pillow>=12.3.0",
+    "pip>=26.2.1",
     "requests>=2.34.2",
+    "segno>=1.6.6",
+    "streamlit>=1.62.0",
+    "python-dotenv>=1.0.0",
 ]
 
 [project.scripts]
@@ -17,3 +27,6 @@ moodle-bot = "moodle_bot:main"
 [build-system]
 requires = ["uv_build>=0.12.3,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-dirs = ["src"]
